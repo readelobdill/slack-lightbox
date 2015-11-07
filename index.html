@@ -2,14 +2,19 @@
     <head>
         <meta charset="UTF-8" />
         <title>Slack Lightbox</title>
-        <!-- <link rel="shortcut icon" href="photos/location-pin.ico"> -->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div id="lightbox" class="vertical-align">
-            <div id="navigate-left" class="lightbox-nav"></div>
-            <img id="lightbox-image" class="vertical-align"></img>
-            <div id="navigate-right" class="lightbox-nav"></div>
+        <div id="lightbox">
+            <figure id="lightbox-figure">
+                <img id="lightbox-image" class="no-select">
+                <span id="lightbox-image-count">1/33</span>
+                <figcaption id="lightbox-caption"></figcation>
+            </figure>
+            <div id="lightbox-nav" class="no-select">
+                <div id="navigate-left" class="lightbox-nav"><span>&lsaquo;</span></div>
+                <div id="navigate-right" class="lightbox-nav"><span>&rsaquo;</span></div>
+            </div>
         </div>
 
         <script src="scripts/lightbox.js" type="text/javascript"></script>
